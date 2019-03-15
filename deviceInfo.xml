@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DeviceInfo version="2.0"
+  xmlns="http://www.hikvision.com/ver20/XMLSchema">
+  <deviceName>People Counting</deviceName>
+  <deviceID>48981290-b1b9-11b3-8202-94e1ac9a474f</deviceID>
+  <deviceDescription>IPCamera</deviceDescription>
+  <deviceLocation>hangzhou</deviceLocation>
+  <systemContact>Hikvision.China</systemContact>
+  <model>iDS-2XM6810F-I/C</model>
+  <serialNumber>iDS-2XM6810F-I/C20180514AAWR214127248</serialNumber>
+  <macAddress>94:e1:ac:9a:47:4f</macAddress>
+  <firmwareVersion>V5.4.7</firmwareVersion>
+  <firmwareReleasedDate>build 171115</firmwareReleasedDate>
+  <encoderVersion>V7.2</encoderVersion>
+  <encoderReleasedDate>build 171024</encoderReleasedDate>
+  <bootVersion>V1.3.4</bootVersion>
+  <bootReleasedDate>100316</bootReleasedDate>
+  <hardwareVersion>0x0</hardwareVersion>
+  <deviceType>IPCamera</deviceType>
+  <telecontrolID>88</telecontrolID>
+  <supportBeep>false</supportBeep>
+  <supportVideoLoss>false</supportVideoLoss>
+</DeviceInfo>
