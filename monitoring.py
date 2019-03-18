@@ -24,7 +24,7 @@ if __name__ == '__main__':
 
     log = open(config_ini['DEFAULT']['log_file'], 'w')
     log.write("ip\tstatus_code_deviceInfo\tdeviceName\tdeviceID\tmodel\tserialNumber\tfirmwareVersion\t"
-              "firmwareReleasedDate\tdeviceType\tstatus_code_time\tactivateDST\tlocalTime\tdiff_in_time\ttimeZone\tNTP\tstatus_code_video\tvideoCodecType\t"
+              "firmwareReleasedDate\tdeviceType\tstatus_code_time\tactivateDST\tDSTsetting\tlocalTime\tdiff_in_time\ttimeZone\tNTP\tstatus_code_video\tvideoCodecType\t"
               "Resolution\tconstantBitRate\n")
     for camer in camerasArray:
         print(camer)
