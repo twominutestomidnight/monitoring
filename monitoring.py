@@ -4,8 +4,11 @@ from DeviceInfo import deviceInfo
 from read_xml import read_xml
 from Time import deviceTime
 from Video import deviceVideo
+import time
+
 
 if __name__ == '__main__':
+    start_time = time.time()
     config_ini = configparser.ConfigParser()
     config_ini.read('config.ini')
     #print(config_ini['DEFAULT']['program_mode'])
@@ -72,3 +75,4 @@ if __name__ == '__main__':
         '''
 
         log.write("\n")
+    print("--- %.5s seconds ---" % (time.time() - start_time))
