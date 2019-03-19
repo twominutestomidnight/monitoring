@@ -28,7 +28,7 @@ if __name__ == '__main__':
     log = open(config_ini['DEFAULT']['log_file'], 'w')
     log.write("ip\tstatus_code_deviceInfo\tdeviceName\tdeviceID\tmodel\tserialNumber\tfirmwareVersion\t"
               "firmwareReleasedDate\tdeviceType\tstatus_code_time\tactivateDST\tDSTsetting\tlocalTime\tdiff_in_time\ttimeZone\tNTP\tstatus_code_video\tvideoCodecType\t"
-              "Resolution\tconstantBitRate\n")
+              "Resolution\tconstantBitRate\tmaxFrameRate\n")
     for camer in camerasArray:
         print(camer)
         info_deviceInfo, status_code_deviceInfo = deviceInfo(camer.ip, camer.port, camer.login, camer.password)
@@ -60,7 +60,8 @@ if __name__ == '__main__':
             #for values in info_time.values():
                 #log.write("\t{}".format(values))
             #print("{}-{}-{}".format(info_time['videoCodecType'],info_time['Resolution'],info_time['constantBitRate']))
-            log.write("\t{}\t{}\t{}".format(info_video['videoCodecType'],info_video['Resolution'],info_video['constantBitRate']))
+            log.write("\t{}\t{}\t{}\t{}".format(info_video['videoCodecType'],info_video['Resolution'],
+                                                info_video['constantBitRate'],info_video['maxFrameRate']))
 
 
         if status_code_deviceInfo == -1:

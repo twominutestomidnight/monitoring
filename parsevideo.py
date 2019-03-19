@@ -8,4 +8,6 @@ def parse_video(data):
     videoResolutionHeight = re.findall(r'<videoResolutionHeight>(.*?)<\/videoResolutionHeight>', data)[0]
     information['Resolution'] = "{}*{}".format(videoResolutionWidth, videoResolutionHeight)
     information['constantBitRate'] = re.findall(r'<constantBitRate>(.*?)<\/constantBitRate>', data)[0]
+    information['maxFrameRate'] = re.findall(r'<maxFrameRate>(.*?)<\/maxFrameRate>', data)[0]
+
     return information

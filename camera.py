@@ -1,3 +1,4 @@
+
 class Camera:
     def __init__(self,ip,port,login,password):
         self.ip = ip
@@ -9,3 +10,15 @@ class Camera:
     def __str__(self):
         return "ip : " + self.ip + ", port : " + str(self.port) + ", login : " + self.login + ", password : " \
                + self.password
+
+    def get_deviceInfo(self, ip, port, login, password):
+        pass
+
+
+    def get_time(self, ip, port, login, password):
+        pass
+
+
+
+    def get_video(self, ip, port, login, password):
+        pass

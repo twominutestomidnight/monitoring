@@ -27,7 +27,7 @@ def parse_time(data):
     local_time = time.time()
 
     information['diff_in_time'] = int(local_time) - int(time.mktime(time.strptime(camera_time, '%Y-%m-%dT%H:%M:%S')))
-    ethalonDST = "DST01:30:00,M4.5.0/03:00:00,M10.5.0/04:00:00"
+    ethalonDST = "DST01:00:00,M4.5.0/03:00:00,M10.5.0/04:00:00"
     if currentDSTsetting == ethalonDST:
         information['DSTsetting'] = 1
     else:
